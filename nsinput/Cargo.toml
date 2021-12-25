@@ -1,0 +1,23 @@
+[package]
+name = "nsinput"
+version = "0.1.0"
+authors = ["Jan Bujak <j@exia.io>"]
+repository = "https://github.com/koute/nsctrld/nsinput"
+homepage = "https://github.com/koute/nsctrld/nsinput"
+documentation = "https://docs.rs/nsinput/*/nsinput/"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "A userspace driver for the Nintendo Switch Pro Controller"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libusb1-sys = "0.3"
+derive_more = "0.99"
+speedy = { version = "0.8", path = "../../speedy" }
+log = "0.4"
+parking_lot = "0.10"
+lock_api = "0.3"
+flume = { version = "0.7", default-features = false }
+libc = "0.2"
